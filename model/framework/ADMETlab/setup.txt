@@ -1,0 +1,24 @@
+sudo apt update
+sudo apt install python2.7
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+python2.7 get-pip.py
+python2.7 -m pip install scikit-learn==0.17.1
+python2.7 -m pip install numpy==1.16.6
+python2.7 -m pip install pandas==0.24.2
+python2.7 -m pip install scipy==1.2.3
+
+conda create -n py27 python=2.7
+conda install -n py27 -c rdkit rdkit=2018.09.3
+
+
+
+# conda install -n py27 -c anaconda scikit-learn=0.17.1
+conda install -n py27 -c anaconda scikit-learn
+# conda install -n py27 -c anaconda numpy=1.16.6
+# conda install -n py27 -c anaconda pandas=0.24.2
+# conda install -n py27 -c anaconda scipy=1.2.3
+conda install -n py27 -c anaconda scipy
+
+
+
+
