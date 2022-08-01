@@ -20,11 +20,19 @@ input_file = sys.argv[1]
 output_file = sys.argv[2]
 
 # current file directory
-root = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.dirname(os.path.abspath(__file__))
+
+# hide gpus
+os.environ["CUDA_VISIBLE_DEVICES"]="-1"
+
+# point to the admetlab paths
+path_root = os.path.join(os.path.abspath(os.path.dirname(__file__)), "..", "..")
+sys.path.append(os.path.abspath(path_root))
+sys.path.append(os.path.join(path_root, "checkpoints", "classification_model"))
 
 # configure relevant resource paths
-checkpoints_dir = os.path.abspath(os.path.join(root, "..", "..", "checkpoints"))
-framework_dir = os.path.abspath(os.path.join(root, ".."))
+checkpoints_dir = os.path.abspath(os.path.join(file_path, "..", "..", "checkpoints"))
+framework_dir = os.path.abspath(os.path.join(file_path, ".."))
 
 # read smiles input and model metadata csv files
 smiles_df = pd.read_csv(input_file)
