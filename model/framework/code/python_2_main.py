@@ -76,4 +76,4 @@ for index, row in model_meta.iterrows():
     outcome_df[row['name'] + '_prob'] = [i[1] for i in y_predict_proba]
 
 # write output to csv
-outcome_df.to_csv("output.csv", index=False)
+outcome_df.to_csv(output_file, index=False)
