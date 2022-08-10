@@ -10,9 +10,9 @@ RUN python2.7 get-pip.py
 RUN rm get-pip.py
 RUN python2.7 -m pip install scikit-learn==0.17.1
 
-RUN conda create -n eos2re5-py27 python=2.7
-RUN conda install -n eos2re5-py27 -c rdkit rdkit=2018.09.3
-RUN conda install -n eos2re5-py27 -c anaconda scipy
+RUN conda create -n eos2re5-py27 python=2.7 -y
+RUN conda install -n eos2re5-py27 -c rdkit rdkit=2018.09.3 -y
+RUN conda install -n eos2re5-py27 -c anaconda scipy -y
 
 WORKDIR /repo
 COPY . /repo
