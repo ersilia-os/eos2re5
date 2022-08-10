@@ -1,9 +1,9 @@
 FROM bentoml/model-server:0.11.0-py37
 MAINTAINER ersilia
 
-RUN sudo apt update
-RUN sudo apt install python2.7
-RUN sudo apt install gfortran-7
+RUN apt update
+RUN apt install python2.7
+RUN apt install gfortran-7
 
 RUN wget https://raw.githubusercontent.com/ersilia-os/eos2re5/main/get-pip.py
 RUN python2.7 get-pip.py
