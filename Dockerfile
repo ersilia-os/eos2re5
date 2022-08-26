@@ -12,9 +12,9 @@ RUN python2.7 -m pip install scikit-learn==0.17.1
 
 RUN conda create -n eos2re5-py27 python=2.7 -y
 RUN conda install -n eos2re5-py27 -c rdkit rdkit=2018.09.3 -y
-RUN conda install -n eos2re5-py27 -c anaconda scipy -y
-RUN conda install -n eos2re5-py27 -c conda-forge openbabel
-RUN conda install -n eos2re5-py27 -c rmg mopac
+RUN conda install -n eos2re5-py27 -c anaconda scipy=1.2.3 -y
+RUN conda install -n eos2re5-py27 -c conda-forge openbabel=3.0.0 -y 
+RUN conda install -n eos2re5-py27 -c rmg mopac=2017 -y
 
 WORKDIR /repo
 COPY . /repo
