@@ -30,6 +30,6 @@
     ],
     "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-018-0283-x",
     "Source Code": "https://github.com/ifyoungnet/ADMETlab",
-    "License": "AGPL-3.0",
+    "License": "GPL-3.0",
     "Contributor": "svolk19-stanford "
 }
