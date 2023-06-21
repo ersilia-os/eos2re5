@@ -31,5 +31,6 @@
     "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-018-0283-x",
     "Source Code": "https://github.com/ifyoungnet/ADMETlab",
     "License": "GPL-3.0",
-    "Contributor": "svolk19-stanford "
+    "Contributor": "svolk19-stanford ",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2re5.zip"
 }

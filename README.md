@@ -23,13 +23,17 @@ A series of models for the systematic ADMET evaluation of drug candidate molecul
 * [Source Code](https://github.com/ifyoungnet/ADMETlab)
 * Ersilia contributor: [svolk19-stanford ](https://github.com/svolk19-stanford )
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos2re5)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2re5.zip)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-018-0283-x) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
 
 ## License
 
-This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a AGPL-3.0 license.
+This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a GPL-3.0 license.
 
 Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
