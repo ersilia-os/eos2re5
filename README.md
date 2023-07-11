@@ -26,6 +26,7 @@ A series of models for the systematic ADMET evaluation of drug candidate molecul
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos2re5)
 * [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2re5.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos2re5) (AMD64)
 
 ## Citation
 

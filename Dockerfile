@@ -11,7 +11,7 @@ RUN wget https://anaconda.org/conda-forge/openbabel/3.0.0/download/linux-64/open
 RUN conda install -n eos2re5-py27 openbabel-3.0.0-py27hdef5451_1.tar.bz2 -y
 RUN conda install -n eos2re5-py27 -c conda-forge mopac -y
 RUN conda install -n eos2re5-py27 pip -y
-RUN CONDA_PATH=$(dirname $(dirname $(which conda))) && PYTHON_ENV_PATH="${CONDA_PATH}/envs/eos2re5-py27/bin/python" && $PYTHON_ENV_PATH -m pip install scikit-learn==0.17.1 -y && $PYTHON_ENV_PATH -m pip install scipy==1.2.3 -y
+RUN CONDA_PATH=$(dirname $(dirname $(which conda))) && PYTHON_ENV_PATH="${CONDA_PATH}/envs/eos2re5-py27/bin/python" && $PYTHON_ENV_PATH -m pip install scikit-learn==0.17.1 && $PYTHON_ENV_PATH -m pip install scipy==1.2.3
 
 WORKDIR /repo
 COPY . /repo
