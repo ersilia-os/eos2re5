@@ -87,7 +87,7 @@ def smiles_to_MACCS(smiles_list):
     return df.to_numpy()
 
 # load models and complete prediction for each
-outcome_df = pd.DataFrame({'smiles': smiles_list})
+outcome_df = pd.DataFrame()
 is_not_ECFP = model_meta['ECFP_type'].isnull().to_numpy()
 is_not_MACCS = model_meta['MACCS'].isnull().to_numpy()
 for index, row in model_meta.iterrows():
